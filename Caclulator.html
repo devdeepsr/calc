@@ -1,0 +1,62 @@
+<html>
+  <head>
+        <title>Add program</title>
+        <script language="javascript">
+                function addNumbers()
+                {
+                        var val1 = parseInt(document.getElementById                        ("value1").value);
+                        var val2 = parseInt(document.getElementById                         ("value2").value);
+                        var ansD = document.getElementById("answer");
+                        ansD.value = val1 + val2;
+                }
+                function subNumbers()
+                {
+                        var val1 = parseInt(document.getElementById                 ("value1").value);
+                        var val2 = parseInt(document.getElementById                 ("value2").value);
+                        var ansD = document.getElementById("answer");
+                        ansD.value = val1 - val2;
+                }
+               function mulNumbers()
+                {
+                        var val1 = parseInt(document.getElementById               ("value1").value);
+                        var val2 = parseInt(document.getElementById                ("value2").value);
+                        var ansD = document.getElementById("answer");
+                        ansD.value = val1 * val2;
+                }
+                function divNumbers()
+                {
+                        var val1 = parseInt(document.getElementById                ("value1").value);
+                        var val2 = parseInt(document.getElementById                ("value2").value);
+                        var ansD = document.getElementById("answer");
+                        ansD.value = val1 / val2;
+                }
+                function modNumbers()
+                {
+                        var val1 = parseInt(document.getElementById                 ("value1").value);
+                        var val2 = parseInt(document.getElementById                  ("value2").value);
+                        var ansD = document.getElementById("answer");
+                        ansD.value = val1 % val2;
+                }
+                function perNumbers()
+                {
+                        var val1 = parseInt(document.getElementById                      ("value1").value);
+                        var val2 = parseInt(document.getElementById                       ("value2").value);
+                        var ansD = document.getElementById("answer");
+                        ansD.value = (val1 / val2)*100;
+                }
+
+
+        </script>
+  </head>
+  <body>
+        value1 = <input type="text" id="value1" name="value1" value=""/>
+        value2 = <input type="text" id="value2" name="value2" value=""/>
+        <input type="button" name="Sumbit" value="ADD" onclick="javascript:addNumbers()"/>
+<input type="button" name="Sumbit" value="SUB" onclick="javascript:subNumbers()"/>
+<input type="button" name="Sumbit" value="MUL" onclick="javascript:mulNumbers()"/>
+<input type="button" name="Sumbit" value="DIV" onclick="javascript:divNumbers()"/>
+<input type="button" name="Sumbit" value="MOD" onclick="javascript:modNumbers()"/>
+<input type="button" name="Sumbit" value="PER" onclick="javascript:perNumbers()"/>
+        Answer = <input type="text" id="answer" name="answer" value=""/>
+  </body>
+</html>
